@@ -26,7 +26,7 @@ class Params
 		title = "Activation distance";
 		values[] = {800, 1000, 1200};
 		texts[] = {"800", "1000", "1200"};
-		default = 800;
+		default = 1000;
 	};
 	class DEP_SAFERADIUS
     {
