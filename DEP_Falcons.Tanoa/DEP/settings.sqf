@@ -33,7 +33,7 @@ dep_act_dist    = PARAMS_DEP_ACTDIST;
 dep_safe_rad    = PARAMS_DEP_SAFERADIUS;
 dep_air_patrols = PARAMS_DEP_AIR;
 dep_bunkers     = 10;
-dep_mortars     = 1;
+dep_mortars     = round random 1;
 
 // Hard difficulty
 if (PARAMS_Difficulty == 1) then {
@@ -42,7 +42,7 @@ if (PARAMS_Difficulty == 1) then {
     dep_bunkers         = 15;
     dep_veh_chance      = 0.7;
     dep_aa_camps        = 6;
-    dep_mortars         = 2;
+    dep_mortars         = 1 + (round random 1);
     dep_roadblocks      = 20;
 };
 
@@ -53,7 +53,7 @@ if (PARAMS_Difficulty == 2) then {
     dep_bunkers         = 20;
     dep_veh_chance      = 0.9;
     dep_aa_camps        = 10;
-    dep_mortars         = 3;
+    dep_mortars         = 1 + (round random 2);
     dep_roadblocks      = 25;
 };
 

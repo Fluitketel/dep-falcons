@@ -358,7 +358,7 @@ CommanderItems = CommanderItems+
 SquadLeadItems = SquadLeadItems+
 [
     "Laserdesignator"
-] + GENERAL_GLOBAL + Bis_Weapons_Standard;
+] + GENERAL_GLOBAL + Bis_Weapons_GLs + Bis_Weapons_Standard;
 
 /////////////////////////////////////////////////////////////////
 TeamLeadItems = TeamLeadItems+

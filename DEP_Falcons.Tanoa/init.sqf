@@ -7,6 +7,11 @@ m_ace       = isClass(configFile >> "cfgPatches" >> "ace_main");
 m_acre      = isClass(configFile >> "cfgPatches" >> "acre_main");
 m_taskforce = isClass(configFile >> "cfgPatches" >> "task_force_radio");
 
+// Don't replace watch with microdagr
+if (m_taskforce) then {
+    TF_give_microdagr_to_soldier = false;
+};
+
 // Process mission parameters
 if (isNil "paramsArray") then {
     paramsArray = [];
