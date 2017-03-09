@@ -28,6 +28,7 @@ if (PARAMS_DebugMode == 1) then {
     dep_debug = true;
 };
 
+dep_max_ai_tot  = PARAMS_DEP_AI_TOT;
 dep_max_ai_loc  = PARAMS_DEP_AI_LOC;
 dep_act_dist    = PARAMS_DEP_ACTDIST;
 dep_safe_rad    = PARAMS_DEP_SAFERADIUS;

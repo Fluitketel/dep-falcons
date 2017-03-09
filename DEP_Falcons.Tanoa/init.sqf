@@ -26,6 +26,9 @@ if (isNil "PARAMS_DebugMode") then {
 if (isNil "PARAMS_Difficulty") then {
     PARAMS_Difficulty = 1;
 };
+if (isNil "PARAMS_DEP_AI_TOT") then {
+    PARAMS_DEP_AI_TOT = 300;
+};
 if (isNil "PARAMS_DEP_AI_LOC") then {
     PARAMS_DEP_AI_LOC = 10;
 };

@@ -21,12 +21,19 @@ class Params
 		texts[] = {"8", "10", "15", "20"};
 		default = 15;
 	};
+    class DEP_AI_TOT
+	{
+		title = "Max total amount of AI";
+		values[] = {200, 300, 400, 500};
+		texts[] = {"200", "300", "400", "500"};
+		default = 300;
+	};
     class DEP_ACTDIST
 	{
 		title = "Activation distance";
 		values[] = {800, 1000, 1200};
 		texts[] = {"800", "1000", "1200"};
-		default = 1000;
+		default = 800;
 	};
 	class DEP_SAFERADIUS
     {
