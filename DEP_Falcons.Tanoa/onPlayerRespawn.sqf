@@ -2,6 +2,7 @@ removeAllWeapons player;
 removeBackpack player;
 removeVest player;
 removeHeadgear player;
+removeGoggles player;
 
 player unassignItem "NVGoggles";
 player removeItem "NVGoggles";
