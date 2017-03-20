@@ -1,0 +1,73 @@
+class Params
+{
+    class DebugMode
+	{
+		title = "Debug Mode";
+		values[] = {1,0};
+		texts[] = {"Enabled","Disabled"};
+		default = 0;
+	};
+    class Difficulty
+	{
+		title = "Difficulty";
+		values[] = {0, 1, 2};
+		texts[] = {"Normal", "Hard", "Very hard"};
+		default = 2;
+	};
+    class Limited_Arsenal
+	{
+		title = "Limit arsenal";
+		values[] = {1,0};
+		texts[] = {"Enabled","Disabled"};
+		default = 1;
+	};
+    class DEP_AI_LOC
+	{
+		title = "Max amount of AI per location";
+		values[] = {8, 10, 15, 20};
+		texts[] = {"8", "10", "15", "20"};
+		default = 8;
+	};
+    class DEP_AI_TOT
+	{
+		title = "Max total amount of AI";
+		values[] = {150, 200, 300, 400};
+		texts[] = {"150", "200", "300", "400"};
+		default = 200;
+	};
+    class DEP_ACTDIST
+	{
+		title = "Activation distance";
+		values[] = {800, 1000, 1200};
+		texts[] = {"800", "1000", "1200"};
+		default = 1000;
+	};
+	class DEP_SAFERADIUS
+    {
+        title = "Safe zone radius";
+        values[] = {500, 600, 800, 1000};
+        texts[] = {"500", "600", "800", "1000"};
+        default = 600;
+    };
+    
+    class DEP_AIR
+    {
+        title = "Ambient air";
+        values[] = {1,0};
+		texts[] = {"Enabled","Disabled"};
+		default = 1;
+    };
+    
+    class daytime
+	{
+		title = "Time of day";
+		values[] = {5, 8, 12, 18, 20, 22};
+		texts[] = {"0500", "0800", "1200", "1800", "2000", "2200"};
+		default = 8;
+	};
+};
+
+class CfgFunctions
+{
+	#include "FalconsArsenal\CfgFunctions.hpp"
+};
