@@ -36,6 +36,7 @@ dep_safe_rad    = PARAMS_DEP_SAFERADIUS;
 dep_air_patrols = PARAMS_DEP_AIR;
 dep_mortars     = round random 2;
 dep_aa_camps    = 5;
+dep_side        = independent;
 
 // Hard difficulty
 if (PARAMS_Difficulty == 1) then {

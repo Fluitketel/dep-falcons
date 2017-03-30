@@ -279,6 +279,8 @@ Bis_Items_Generic =
 if (m_acre) then {
     Bis_Items_Generic = Bis_Items_Generic + [
         "ACRE_PRC343",
+        "ACRE_PRC152",
+        "ACRE_PRC117F",
         "ACRE_PRC148"
     ];
 };

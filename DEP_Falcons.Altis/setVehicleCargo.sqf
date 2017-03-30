@@ -1,3 +1,5 @@
+waitUntil {!isNil "m_isserver"};
+if !(m_isserver) exitWith {};
 if (isNull _this) exitWith {};
 if !(alive _this) exitWith {};
 

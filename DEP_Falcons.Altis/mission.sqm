@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={10934.86,75.61132,18150.217};
-		dir[]={-0.76468813,-0.30565745,0.56750125};
-		up[]={-0.24573019,0.95200723,0.18236133};
-		aside[]={0.59600896,-1.8828723e-006,0.80310762};
+		dir[]={-0.20262863,-0.46749714,0.86059284};
+		up[]={-0.10721421,0.88381279,0.45534241};
+		aside[]={0.97348356,-2.4950132e-006,0.22921221};
 	};
 };
 binarizationWanted=0;
@@ -2234,23 +2234,42 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10916.86,58.039253,18170.25};
-						angles[]={0,4.5120707,0};
+						position[]={10916.86,58.039238,18170.25};
+						angles[]={0,4.5120778,0};
 					};
 					side="West";
 					flags=3;
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						description="Platoon Lead Squad Leader";
+						description="Platoon Lead ";
 						isPlayer=1;
 					};
 					id=122;
 					type="B_Soldier_SL_F";
-					atlOffset=0.32901382;
+					atlOffset=0.32899857;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2269,7 +2288,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -2277,23 +2296,42 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10916.544,58.053112,18171.848};
-						angles[]={0,4.5120707,0};
+						position[]={10916.544,58.053474,18171.848};
+						angles[]={0,4.5120778,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Platoon Sergeant Grenadier";
+						description="Platoon Sergeant";
 						isPlayable=1;
 					};
 					id=123;
 					type="B_Soldier_GL_F";
-					atlOffset=0.35463715;
+					atlOffset=0.35499954;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2312,7 +2350,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item2
@@ -2320,23 +2358,42 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10916.224,58.052177,18173.418};
-						angles[]={0,4.5120707,0};
+						position[]={10916.224,58.052525,18173.418};
+						angles[]={0,4.5120778,0};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Platoon Medic Combat Life Saver";
+						description="Platoon Medic";
 						isPlayable=1;
 					};
 					id=124;
 					type="B_medic_F";
-					atlOffset=0.37265396;
+					atlOffset=0.3730011;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2355,7 +2412,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item3
@@ -2363,8 +2420,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10915.893,58.045517,18174.996};
-						angles[]={0,4.5120707,0};
+						position[]={10915.893,58.045418,18174.996};
+						angles[]={0,4.5120778,0};
 					};
 					side="West";
 					flags=1;
@@ -2376,10 +2433,29 @@ class Mission
 					};
 					id=125;
 					type="B_Soldier_lite_F";
-					atlOffset=0.39109802;
+					atlOffset=0.39099884;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2398,7 +2474,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -2407,7 +2483,7 @@ class Mission
 				behaviour="SAFE";
 			};
 			id=121;
-			atlOffset=0.32901382;
+			atlOffset=0.32899857;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3488,23 +3564,42 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10928.06,57.769981,18170.957};
-						angles[]={0,4.5120707,0};
+						position[]={10928.06,57.76963,18170.957};
+						angles[]={0,4.5120778,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Vehicle Commander Team Leader";
+						description="Vehicle Commander";
 						isPlayable=1;
 					};
 					id=154;
 					type="B_crew_F";
-					atlOffset=0.030349731;
+					atlOffset=0.029998779;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -3523,7 +3618,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -3616,7 +3711,7 @@ class Mission
 				behaviour="SAFE";
 			};
 			id=153;
-			atlOffset=0.030349731;
+			atlOffset=0.029998779;
 			class CustomAttributes
 			{
 				class Attribute0
