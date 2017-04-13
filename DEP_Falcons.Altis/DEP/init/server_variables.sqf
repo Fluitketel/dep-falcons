@@ -16,7 +16,7 @@
 */
 // This file creates all the server variables
 
-dep_version                 = "0.6.2"; publicVariable "dep_version";
+dep_version                 = "0.6.3"; publicVariable "dep_version";
 dep_worldname   			= toLower(worldName);
 dep_total_ai    			= 0;
 dep_total_civ   			= 0;
@@ -32,6 +32,7 @@ dep_exceeded_ai_limit       = false;
 dep_exceeded_group_limit	= false;
 dep_mrk_location_clear      = "mil_flag";
 dep_mrk_location_hostile    = "mil_objective";
+dep_formations              = ["COLUMN", "FILE", "STAG COLUMN"];
 
 // World specific settings
 switch (dep_worldname) do {
