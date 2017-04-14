@@ -35,7 +35,8 @@ _specNames =
     "RconMedic",
     "UAVOperator",
     "RconExp",
-    "Repair"
+    "Repair",
+    "RconTeamLead"
 ];
 _specTypes = 
 [
@@ -56,7 +57,8 @@ _specTypes =
 	["B_recon_medic_F"],
 	["B_soldier_UAV_F"],
 	["B_recon_exp_F"],
-	["B_T_Soldier_Repair_F"]
+	["B_T_Soldier_Repair_F"],
+	["B_recon_TL_F"]
 ];
 
 _specSlots = [];
@@ -83,6 +85,7 @@ RconMedic           = [];
 UAVItems            = [];
 RconExp             = [];
 Repair              = [];
+RconTeamLead        = [];
 
 if (PARAMS_ALLOW_BIS == 1) then {
     _VA_Bis_Script = execVM "FalconsArsenal\VA_Bis.sqf";
@@ -150,7 +153,8 @@ _specItems = [
     RconMedic,
     UAVItems,
     RconExp,
-    Repair
+    Repair,
+    RconTeamLead
  ];
 
 [_target, [_this select 0, _restrictionDistance, _specNames, _specSlots, _specTypes, _specItems]] spawn FalconsArsenal_fnc_executeLocalArsenal;

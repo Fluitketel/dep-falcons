@@ -384,7 +384,7 @@ MarksmanItems = MarksmanItems+
 	//"bipod_01_F_snd",
     //"bipod_01_F_mtp",
     "bipod_01_F_blk"
-] + GENERAL_GLOBAL + Bis_Weapons_Snipers + Bis_Scopes_Sniper ;
+] + GENERAL_GLOBAL + Bis_Silencers + Bis_Weapons_Snipers + Bis_Scopes_Sniper ;
 
 /////////////////////////////////////////////////////////////////
 ReconItems = ReconItems+
@@ -420,10 +420,17 @@ RconExp = RconExp+
     "V_PlateCarrierIAGL_oli",
     "V_PlateCarrierGL_tna_F",
     "ToolKit"
-] + GENERAL_GLOBAL + Bis_Silencers + Bis_Weapons_Standard;
+] + GENERAL_GLOBAL + Bis_Explosives + Bis_Silencers + Bis_Weapons_Standard;
 
 /////////////////////////////////////////////////////////////////
 Repair = Repair+
 [
     "ToolKit"
 ] + GENERAL_GLOBAL + Bis_Weapons_Standard;
+
+/////////////////////////////////////////////////////////////////
+RconTeamLead = RconTeamLead+
+[	
+    "Laserdesignator",
+    "H_Booniehat_khk_hs"
+] + GENERAL_GLOBAL + Bis_Silencers + Bis_Weapons_Standard + Bis_Weapons_GLs;

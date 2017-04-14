@@ -93,7 +93,7 @@ ACE_Items_Generic =
     "ACE_microDAGR",
     "ACE_RangeTable_82mm",
     "ACE_SpareBarrel",
-    "ACE_MX2A",
+    //"ACE_MX2A",
     "ACE_UAVBattery",
     //"ACE_wirecutter",
     "ACE_HuntIR_monitor",
@@ -274,3 +274,8 @@ Repair = Repair+
 [
 
 ] + GENERAL_GLOBAL + ACE_Weapons_Standard;
+
+RconTeamLead = RconTeamLead+
+[
+
+] + GENERAL_GLOBAL + ACE_Silencers + ACE_Weapons_Standard;
