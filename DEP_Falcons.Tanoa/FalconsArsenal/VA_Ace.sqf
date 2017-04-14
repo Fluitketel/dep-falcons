@@ -98,6 +98,7 @@ ACE_Items_Generic =
     "ACE_Flashlight_MX991",
     "ACE_Flashlight_KSF1",
     "ACE_Flashlight_XL50", 
+    "ACE_CableTie", 
     "ACE_fieldDressing",
     "ACE_elasticBandage",
     "ACE_morphine",

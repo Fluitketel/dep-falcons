@@ -50,6 +50,8 @@ Bis_Weapons_ATs =
     
 Bis_Weapons_Snipers =
 [
+    "arifle_MXM_F",
+    "arifle_MXM_Black_F",
     "srifle_EBR_F",
     //"srifle_DMR_02_F",
     "srifle_DMR_03_khaki_F",
