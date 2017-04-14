@@ -24,16 +24,16 @@ class Params
     class DEP_AI_LOC
 	{
 		title = "Max amount of AI per location";
-		values[] = {8, 10, 15, 20};
-		texts[] = {"8", "10", "15", "20"};
-		default = 8;
+		values[] = {8, 10, 12, 15, 20};
+		texts[] = {"8", "10", "12", "15", "20"};
+		default = 12;
 	};
     class DEP_AI_TOT
 	{
 		title = "Max total amount of AI";
 		values[] = {150, 200, 300, 400};
 		texts[] = {"150", "200", "300", "400"};
-		default = 200;
+		default = 300;
 	};
     class DEP_ACTDIST
 	{
@@ -47,7 +47,7 @@ class Params
         title = "Safe zone radius";
         values[] = {500, 600, 800, 1000};
         texts[] = {"500", "600", "800", "1000"};
-        default = 600;
+        default = 800;
     };
     
     class DEP_AIR

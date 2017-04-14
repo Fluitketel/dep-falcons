@@ -41,23 +41,23 @@ dep_side        = independent;
 // Hard difficulty
 if (PARAMS_Difficulty == 1) then {
     dep_housepop        = 130;
-    dep_military        = 10;
+    dep_military        = 15;
     dep_bunkers         = 35;
-    dep_veh_chance      = 0.7;
+    dep_veh_chance      = 0.6;
     dep_aa_camps        = 10;
     dep_mortars         = 1 + (round random 2);
-    dep_roadblocks      = 35;
+    dep_roadblocks      = 30;
 };
 
 // Very hard difficulty
 if (PARAMS_Difficulty == 2) then {
     dep_housepop        = 180;
-    dep_military        = 20;
+    dep_military        = 30;
     dep_bunkers         = 40;
-    dep_veh_chance      = 0.9;
+    dep_veh_chance      = 0.7;
     dep_aa_camps        = 20;
     dep_mortars         = 1 + (round random 3);
-    dep_roadblocks      = 45;
+    dep_roadblocks      = 40;
 };
 
 if (dep_debug) then {
@@ -71,19 +71,43 @@ dep_ground_vehicles = [
     "I_C_Van_01_transport_F",
     "I_G_Van_01_transport_F",
     "I_G_Offroad_01_armed_F",
-    "I_MRAP_03_hmg_F",
     "I_G_Offroad_01_F",
     "I_Truck_02_transport_F",
     "I_Truck_02_covered_F",
-    "I_APC_Wheeled_03_cannon_F"
+    "I_APC_Wheeled_03_cannon_F",
+    "I_APC_tracked_03_cannon_F",
+    "I_MBT_03_cannon_F",
+    "I_MRAP_03_hmg_F",
+    "I_MRAP_03_gmg_F",
+    "I_C_Offroad_02_unarmed_F",
+    "I_C_Van_01_transport_F",
+    "I_G_Van_01_transport_F",
+    "I_G_Offroad_01_armed_F",
+    "I_G_Offroad_01_F",
+    "I_Truck_02_transport_F",
+    "I_Truck_02_covered_F"
     ];
 dep_air_vehicles = [
     "I_Heli_light_03_F",
     "I_Heli_light_03_unarmed_F",
     "I_Heli_light_03_unarmed_F",
     "I_C_Heli_Light_01_civil_F",
+    "I_Heli_Transport_02_F",
+    "I_Plane_Fighter_03_CAS_F",
+    "I_Plane_Fighter_03_AA_F",
+    "I_Heli_light_03_F",
+    "I_Heli_light_03_unarmed_F",
+    "I_Heli_light_03_unarmed_F",
+    "I_C_Heli_Light_01_civil_F",
     "I_Heli_Transport_02_F"
     ];
+    
+dep_safe_zone = [
+    getMarkerPos "respawn_west", 
+    getMarkerPos "safezone1", 
+    getMarkerPos "safezone2"
+];
+    
 // *************************************************************
 // General settings
 // *************************************************************

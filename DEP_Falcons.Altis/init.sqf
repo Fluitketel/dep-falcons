@@ -31,7 +31,7 @@ if (isNil "PARAMS_DEP_ACTDIST") then {
     PARAMS_DEP_ACTDIST = 1000;
 };
 if (isNil "PARAMS_DEP_SAFERADIUS") then {
-    PARAMS_DEP_SAFERADIUS = 600;
+    PARAMS_DEP_SAFERADIUS = 800;
 };
 if (isNil "PARAMS_DEP_AIR") then {
     PARAMS_DEP_AIR = 1;

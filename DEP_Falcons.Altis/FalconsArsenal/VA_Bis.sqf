@@ -32,10 +32,10 @@ Bis_Weapons_ARs =
     "arifle_MX_SW_F",
     "arifle_MX_SW_Black_F",
     //"arifle_MX_SW_khk_F",
-    //"LMG_Mk200_F",
+    "LMG_Mk200_F",
     //"MMG_02_camo_F",
     //"MMG_02_black_F",
-    //"MMG_02_sand_F",
+    "MMG_02_sand_F",
     "arifle_SPAR_02_blk_F",
     //"arifle_SPAR_02_khk_F",
     "arifle_SPAR_02_snd_F",
@@ -81,7 +81,7 @@ Bis_Weapons_Generic =
 Bis_Ammunition = 
 [
     //"10Rnd_338_Mag",
-    //"130Rnd_338_Mag",
+    "130Rnd_338_Mag",
     "30Rnd_45ACP_Mag_SMG_01",
     "30Rnd_45ACP_Mag_SMG_01_Tracer_Red",
     "11Rnd_45ACP_Mag",
@@ -90,8 +90,8 @@ Bis_Ammunition =
     "30Rnd_65x39_caseless_mag_Tracer",
     "100Rnd_65x39_caseless_mag",
     "100Rnd_65x39_caseless_mag_Tracer",
-    //"200Rnd_65x39_cased_Box",
-    //"200Rnd_65x39_cased_Box_Tracer",
+    "200Rnd_65x39_cased_Box",
+    "200Rnd_65x39_cased_Box_Tracer",
     "30Rnd_556x45_Stanag",
     "30Rnd_556x45_Stanag_Tracer_Red",
     "20Rnd_762x51_Mag",
@@ -148,7 +148,8 @@ Bis_Ammunition =
     "Chemlight_green",
     "Chemlight_red",
     "Chemlight_yellow",
-    "Chemlight_blue"
+    "Chemlight_blue",
+    "Laserbatteries"
 ];
 
 Bis_Explosives =

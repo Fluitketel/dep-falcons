@@ -58,7 +58,9 @@ ACE_Ammunition =
 
 ACE_Explosives = [];
 
-ACE_Backpacks = [];
+ACE_Backpacks = [
+    "ACE_TacticalLadder_Pack"
+];
 
 ACE_scopes = 
 [
@@ -91,7 +93,8 @@ ACE_Items_Generic =
     "ACE_microDAGR",
     "ACE_RangeTable_82mm",
     "ACE_SpareBarrel",
-    //"ACE_UAVBattery",
+    "ACE_MX2A",
+    "ACE_UAVBattery",
     //"ACE_wirecutter",
     "ACE_HuntIR_monitor",
     "ACE_DAGR",  
@@ -254,11 +257,13 @@ RconMedic = RconMedic+
 
 UAVItems = UAVItems+
 [
-    "ACE_UAVBattery"
+
 ] + GENERAL_GLOBAL + ACE_Silencers  + ACE_Weapons_Standard;
 
 RconExp = RconExp+
 [
+    "ACE_Clacker",
+    "ACE_M26_Clacker",
     "ACE_DefusalKit",
     "ACE_wirecutter",
     "ACE_VMH3",
