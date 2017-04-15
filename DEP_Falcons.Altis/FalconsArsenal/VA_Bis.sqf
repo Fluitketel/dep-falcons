@@ -336,7 +336,7 @@ MedicItems = MedicItems+
 /////////////////////////////////////////////////////////////////
 EODItems = EODItems+
 [
-    "V_PlateCarrierGL_rgr"
+    "V_PlateCarrierGL_rgr",
     //"V_PlateCarrierGL_tna_F",
     "ToolKit"
 ] + GENERAL_GLOBAL + Bis_Explosives + Bis_Weapons_Standard;
@@ -417,7 +417,7 @@ UAVItems = UAVItems+
 RconExp = RconExp+
 [
     "H_Booniehat_khk_hs",
-    "V_PlateCarrierGL_rgr"
+    "V_PlateCarrierGL_rgr",
     //"V_PlateCarrierGL_tna_F",
     "ToolKit"
 ] + GENERAL_GLOBAL + Bis_Explosives + Bis_Silencers + Bis_Weapons_Standard;
