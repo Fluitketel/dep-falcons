@@ -46,7 +46,7 @@ _specTypes =
 	["B_soldier_LAT_F","B_soldier_AT_F", "B_T_Soldier_AT_F"],
 	["B_medic_F", "B_T_Medic_F"],
 	["B_soldier_exp_F", "B_T_Soldier_Exp_F"],
-	["B_Helipilot_F","B_helicrew_F","B_Pilot_F","B_soldier_repair_F","B_T_Pilot_F","B_T_Helipilot_F"],
+	["B_Helipilot_F","B_helicrew_F","B_Pilot_F","B_T_Pilot_F","B_T_Helipilot_F"],
 	["B_Soldier_A_F", "B_T_Soldier_unarmed_F", "B_Soldier_lite_F"],
 	["B_officer_F"],
 	["B_Soldier_SL_F", "B_T_Soldier_SL_F"],
