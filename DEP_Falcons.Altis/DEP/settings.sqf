@@ -91,14 +91,14 @@ dep_air_vehicles = [
     "I_Heli_light_03_F",
     "I_Heli_light_03_unarmed_F",
     "I_Heli_light_03_unarmed_F",
-    "I_C_Heli_Light_01_civil_F",
+    //"I_C_Heli_Light_01_civil_F",
     "I_Heli_Transport_02_F",
     "I_Plane_Fighter_03_CAS_F",
     "I_Plane_Fighter_03_AA_F",
     "I_Heli_light_03_F",
     "I_Heli_light_03_unarmed_F",
     "I_Heli_light_03_unarmed_F",
-    "I_C_Heli_Light_01_civil_F",
+    //"I_C_Heli_Light_01_civil_F",
     "I_Heli_Transport_02_F"
     ];
     

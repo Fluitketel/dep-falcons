@@ -309,8 +309,8 @@ GENERAL_GLOBAL = GENERAL_GLOBAL + Bis_Items_Generic + Bis_Hats_Glasses_Masks + B
 /////////////////////////////////////////////////////////////////
 GrenadierItems = GrenadierItems+
 [
-    "V_PlateCarrierGL_rgr",
-    "V_PlateCarrierGL_tna_F"
+    "V_PlateCarrierGL_rgr"
+    //"V_PlateCarrierGL_tna_F"
 ] + GENERAL_GLOBAL + Bis_Weapons_GLs;
 	
 /////////////////////////////////////////////////////////////////			
@@ -336,8 +336,8 @@ MedicItems = MedicItems+
 /////////////////////////////////////////////////////////////////
 EODItems = EODItems+
 [
-    "V_PlateCarrierGL_rgr",
-    "V_PlateCarrierGL_tna_F",
+    "V_PlateCarrierGL_rgr"
+    //"V_PlateCarrierGL_tna_F",
     "ToolKit"
 ] + GENERAL_GLOBAL + Bis_Explosives + Bis_Weapons_Standard;
 
@@ -417,8 +417,8 @@ UAVItems = UAVItems+
 RconExp = RconExp+
 [
     "H_Booniehat_khk_hs",
-    "V_PlateCarrierIAGL_oli",
-    "V_PlateCarrierGL_tna_F",
+    "V_PlateCarrierGL_rgr"
+    //"V_PlateCarrierGL_tna_F",
     "ToolKit"
 ] + GENERAL_GLOBAL + Bis_Explosives + Bis_Silencers + Bis_Weapons_Standard;
 
