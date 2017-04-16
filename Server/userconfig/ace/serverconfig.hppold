@@ -65,7 +65,7 @@ class ace_frag_spallEnabled {
     force = 1;
 };
 class ace_frag_reflectionsEnabled {
-    value = 1;
+    value = 0;
     typeName = "BOOL";
     force = 1;
 };
@@ -285,7 +285,7 @@ class ace_medical_enableRevive {
     force = 1;
 };
 class ace_medical_maxReviveTime {
-    value = 450;
+    value = 600;
     typeName = "SCALAR";
     force = 1;
 };
@@ -425,7 +425,7 @@ class ace_mk6mortar_airResistanceEnabled {
     force = 1;
 };
 class ace_mk6mortar_allowComputerRangefinder {
-    value = 1;
+    value = 0;
     typeName = "BOOL";
     force = 1;
 };
@@ -680,7 +680,7 @@ class ace_vehiclelock_vehicleStartingLockState {
     force = 1;
 };
 class ace_viewdistance_enabled {
-    value = 0;
+    value = 1;
     typeName = "BOOL";
     force = 1;
 };
@@ -740,7 +740,7 @@ class ace_winddeflection_simulationRadius {
     force = 1;
 };
 class ace_zeus_zeusAscension {
-    value = 1;
+    value = 0;
     typeName = "BOOL";
     force = 1;
 };
@@ -805,7 +805,7 @@ class ace_advanced_throwing_enablePickUpAttached {
     force = 1;
 };
 class ace_captives_allowHandcuffOwnSide {
-    value = 0;
+    value = 1;
     typeName = "BOOL";
     force = 1;
 };
