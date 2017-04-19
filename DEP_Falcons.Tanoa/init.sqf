@@ -65,7 +65,6 @@ if (m_isserver) then {
     };
     
     [PARAMS_daytime] call BIS_fnc_paramDaytime;
-    [] execVM "clearItems.sqf";
     
     targets = allMissionObjects "TargetBase";
     {
