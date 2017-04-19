@@ -7,6 +7,13 @@ class Params
 		texts[] = {"Enabled","Disabled"};
 		default = 0;
 	};
+    class base_location
+	{
+		title = "Starting base";
+		values[] = {-1,0,1,2,3};
+		texts[] = {"Random","Comms Bravo","Katkoula Beach","Tavanaka Airbase","Lijnhaven"};
+		default = -1;
+	};
     class Difficulty
 	{
 		title = "Difficulty";
@@ -38,9 +45,9 @@ class Params
 	class DEP_SAFERADIUS
     {
         title = "Safe zone radius";
-        values[] = {600, 700, 800, 1000};
-        texts[] = {"600", "700", "800", "1000"};
-        default = 800;
+        values[] = {400, 700, 800, 1000};
+        texts[] = {"400", "700", "800", "1000"};
+        default = 400;
     };
     
     class DEP_AIR

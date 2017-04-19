@@ -9,6 +9,7 @@ showSubs = showSubtitles false;
 ShowRad = showRadio false;
 EnabRad = enableRadio false;
 player disableConversation true;
+player setVariable ["BIS_noCoreConversations", true];
 
 player addEventHandler [
     "respawn",

@@ -63,6 +63,15 @@ if (dep_debug) then {
     //dep_enemy_presence = 0.1;
 };
 
+dep_safe_zone = [
+    getMarkerPos "safezone1", 
+    getMarkerPos "safezone2",
+    getMarkerPos "safezone3",
+    getMarkerPos "safezone4",
+    getMarkerPos "safezone5",
+    getMarkerPos "safezone6"
+];
+
 // *************************************************************
 // General settings
 // *************************************************************

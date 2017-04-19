@@ -36,13 +36,16 @@ if (isNil "PARAMS_DEP_ACTDIST") then {
     PARAMS_DEP_ACTDIST = 800;
 };
 if (isNil "PARAMS_DEP_SAFERADIUS") then {
-    PARAMS_DEP_SAFERADIUS = 800;
+    PARAMS_DEP_SAFERADIUS = 400;
 };
 if (isNil "PARAMS_DEP_AIR") then {
     PARAMS_DEP_AIR = 1;
 };
 if (isNil "PARAMS_daytime") then {
     PARAMS_daytime = 12;
+};
+if (isNil "PARAMS_base_location") then {
+    PARAMS_base_location = -1;
 };
 
 // Initialize DEP
@@ -54,6 +57,13 @@ if (m_isclient) then {
 };
 
 if (m_isserver) then {
+    m_bases = ["comms bravo","katkoula beach","tavanaka airbase","lijnhaven"];
+    if (PARAMS_base_location >= 0) then {
+        m_base_location = m_bases select PARAMS_base_location;
+    } else {
+        m_base_location = m_bases call BIS_fnc_selectRandom;
+    };
+    
     [PARAMS_daytime] call BIS_fnc_paramDaytime;
     [] execVM "clearItems.sqf";
     
