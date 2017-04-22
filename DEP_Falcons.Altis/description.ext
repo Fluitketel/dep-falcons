@@ -26,7 +26,7 @@ class Params
 		title = "Max amount of AI per location";
 		values[] = {8, 10, 12, 15, 20};
 		texts[] = {"8", "10", "12", "15", "20"};
-		default = 12;
+		default = 15;
 	};
     class DEP_AI_TOT
 	{

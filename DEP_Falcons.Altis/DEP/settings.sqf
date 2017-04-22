@@ -40,22 +40,22 @@ dep_side        = independent;
 
 // Hard difficulty
 if (PARAMS_Difficulty == 1) then {
-    dep_housepop        = 130;
+    dep_housepop        = 150;
     dep_military        = 15;
     dep_bunkers         = 35;
     dep_veh_chance      = 0.6;
-    dep_aa_camps        = 10;
+    dep_aa_camps        = 15;
     dep_mortars         = 1 + (round random 2);
     dep_roadblocks      = 30;
 };
 
 // Very hard difficulty
 if (PARAMS_Difficulty == 2) then {
-    dep_housepop        = 180;
+    dep_housepop        = 200;
     dep_military        = 30;
     dep_bunkers         = 40;
     dep_veh_chance      = 0.7;
-    dep_aa_camps        = 20;
+    dep_aa_camps        = 30;
     dep_mortars         = 1 + (round random 3);
     dep_roadblocks      = 40;
 };
@@ -107,6 +107,9 @@ dep_safe_zone = [
     getMarkerPos "safezone1", 
     getMarkerPos "safezone2"
 ];
+
+dep_u_aa = "I_soldier_F";
+dep_u_aaa = "I_Soldier_A_F";
     
 // *************************************************************
 // General settings
