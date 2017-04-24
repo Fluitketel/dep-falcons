@@ -51,11 +51,6 @@ if (isNil "PARAMS_base_location") then {
 // Initialize DEP
 [] execVM "DEP\init.sqf";
 
-if (m_isclient) then {
-    // No player voices
-    [] execVM "nopv.sqf";
-};
-
 if (m_isserver) then {
     m_bases = ["comms bravo","katkoula beach","tavanaka airbase","lijnhaven"];
     if (PARAMS_base_location >= 0) then {

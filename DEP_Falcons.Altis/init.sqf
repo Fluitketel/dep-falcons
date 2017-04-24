@@ -45,11 +45,6 @@ if (isNil "PARAMS_Limited_Arsenal") then {
 
 [] execVM "DEP\init.sqf";
 
-if (m_isclient) then {
-    // No player voices
-    [] execVM "nopv.sqf";
-};
-
 if (m_isserver) then {
     [PARAMS_daytime] call BIS_fnc_paramDaytime;
     [] execVM "clearItems.sqf";

@@ -17119,7 +17119,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={12463.173,7.0152369,2411.6462};
-			angle=4.5089335;
+			angle=4.5089331;
 			class Attributes
 			{
 				name="service5";
