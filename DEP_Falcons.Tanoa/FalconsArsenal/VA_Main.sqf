@@ -13,8 +13,6 @@ PARAMS_ALLOW_3CB = 0;
 
 if (m_ace) then { PARAMS_ALLOW_ACE = 1; };
 
-[getPos (_this select 0)] execVM "clearItems.sqf";
-
 _target = sideUnknown;
 _restrictionDistance = 5;
 //  _specNames _specSlots _specTypes ... all must have the same amounts

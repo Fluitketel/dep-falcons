@@ -7,6 +7,13 @@ class Params
 		texts[] = {"Enabled","Disabled"};
 		default = 0;
 	};
+    class base_location
+	{
+		title = "Starting base";
+		values[] = {-1,0,1};
+		texts[] = {"Random","Salt Flats (NE)","Ekali (SE)"};
+		default = -1;
+	};
     class Difficulty
 	{
 		title = "Difficulty";
@@ -45,9 +52,9 @@ class Params
 	class DEP_SAFERADIUS
     {
         title = "Safe zone radius";
-        values[] = {500, 600, 800, 1000};
-        texts[] = {"500", "600", "800", "1000"};
-        default = 800;
+        values[] = {600, 700, 800, 1000};
+        texts[] = {"600", "700", "800", "1000"};
+        default = 700;
     };
     
     class DEP_AIR

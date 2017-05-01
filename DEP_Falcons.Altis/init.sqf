@@ -31,7 +31,7 @@ if (isNil "PARAMS_DEP_ACTDIST") then {
     PARAMS_DEP_ACTDIST = 1000;
 };
 if (isNil "PARAMS_DEP_SAFERADIUS") then {
-    PARAMS_DEP_SAFERADIUS = 800;
+    PARAMS_DEP_SAFERADIUS = 700;
 };
 if (isNil "PARAMS_DEP_AIR") then {
     PARAMS_DEP_AIR = 1;
@@ -42,10 +42,27 @@ if (isNil "PARAMS_daytime") then {
 if (isNil "PARAMS_Limited_Arsenal") then {
     PARAMS_Limited_Arsenal = 1;
 };
+if (isNil "PARAMS_base_location") then {
+    PARAMS_base_location = -1;
+};
 
 [] execVM "DEP\init.sqf";
 
 if (m_isserver) then {
+    m_bases = ["Salt Flats","Ekali"];
+    if (PARAMS_base_location >= 0) then {
+        m_base_location = m_bases select PARAMS_base_location;
+    } else {
+        m_base_location = m_bases call BIS_fnc_selectRandom;
+    };
+    
     [PARAMS_daytime] call BIS_fnc_paramDaytime;
-    [] execVM "clearItems.sqf";
+};
+
+if (m_isclient) then {
+    if (!isMultiplayer) then {
+        waitUntil {count ([player] call BIS_fnc_getRespawnPositions) > 0};
+        _spawnpositions = [player] call BIS_fnc_getRespawnPositions;
+        player setPos (getPos (_spawnpositions select 0));
+    };
 };

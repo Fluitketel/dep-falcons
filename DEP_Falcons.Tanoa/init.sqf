@@ -44,6 +44,9 @@ if (isNil "PARAMS_DEP_AIR") then {
 if (isNil "PARAMS_daytime") then {
     PARAMS_daytime = 12;
 };
+if (isNil "PARAMS_Limited_Arsenal") then {
+    PARAMS_Limited_Arsenal = 1;
+};
 if (isNil "PARAMS_base_location") then {
     PARAMS_base_location = -1;
 };
@@ -60,14 +63,12 @@ if (m_isserver) then {
     };
     
     [PARAMS_daytime] call BIS_fnc_paramDaytime;
-    
-    targets = allMissionObjects "TargetBase";
-    {
-        _x addEventHandler 
-            ["Hit", {                       
-                _target = _this select 0;   
-                _player = _this select 1;
-                [format["Target hit from %1 meters", ceil (_target distance _player)], "hint", _player] call BIS_fnc_MP;
-            }];
-    } forEach targets;
+};
+
+if (m_isclient) then {
+    if (!isMultiplayer) then {
+        waitUntil {count ([player] call BIS_fnc_getRespawnPositions) > 0};
+        _spawnpositions = [player] call BIS_fnc_getRespawnPositions;
+        player setPos (getPos (_spawnpositions select 0));
+    };
 };

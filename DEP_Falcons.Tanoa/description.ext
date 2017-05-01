@@ -21,6 +21,13 @@ class Params
 		texts[] = {"Normal", "Hard", "Very hard"};
 		default = 2;
 	};
+    class Limited_Arsenal
+	{
+		title = "Limit arsenal";
+		values[] = {1,0};
+		texts[] = {"Enabled","Disabled"};
+		default = 1;
+	};
     class DEP_AI_LOC
 	{
 		title = "Max amount of AI per location";

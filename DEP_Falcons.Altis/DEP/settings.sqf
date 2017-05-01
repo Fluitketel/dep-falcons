@@ -102,10 +102,11 @@ dep_air_vehicles = [
     "I_Heli_Transport_02_F"
     ];
     
-dep_safe_zone = [
-    getMarkerPos "respawn_west", 
+dep_safe_zone = [ 
     getMarkerPos "safezone1", 
-    getMarkerPos "safezone2"
+    getMarkerPos "safezone2",
+    getMarkerPos "safezone3",
+    getMarkerPos "safezone4"
 ];
 
 dep_u_aa = "I_soldier_F";

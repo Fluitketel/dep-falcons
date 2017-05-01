@@ -104,9 +104,9 @@ ACE_Items_Generic =
     "ACE_morphine",
     //"ACE_bodyBag",
     "ACE_epinephrine",
-    "ACE_bloodIV",
-    "ACE_bloodIV_500",
-    "ACE_bloodIV_250"
+    "ACE_bloodIV"
+    //"ACE_bloodIV_500",
+    //"ACE_bloodIV_250"
 ];
     
 // Advanced medical system

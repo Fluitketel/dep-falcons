@@ -107,6 +107,7 @@ Bis_Ammunition =
     "NLAW_F",
     "Titan_AA",
     "Titan_AT",
+    "Titan_AP",
     
     "Laserbatteries",
     "SmokeShell",
@@ -216,7 +217,9 @@ Bis_Silencers =
     "muzzle_snds_L",
     "muzzle_snds_M",
     "muzzle_snds_H_SW",
-    "muzzle_snds_B"
+    "muzzle_snds_B",
+    "muzzle_mzls_L",
+    "muzzle_mzls_H"
 ];
  
 Bis_Uniforms = 
@@ -383,26 +386,31 @@ MarksmanItems = MarksmanItems+
     "H_Booniehat_khk_hs",
 	//"bipod_01_F_snd",
     //"bipod_01_F_mtp",
+    "B_Static_Designator_01_weapon_F",
     "bipod_01_F_blk"
 ] + GENERAL_GLOBAL + Bis_Silencers + Bis_Weapons_Snipers + Bis_Scopes_Sniper ;
 
 /////////////////////////////////////////////////////////////////
 ReconItems = ReconItems+
 [	
-    "H_Booniehat_khk_hs"
+    "H_Booniehat_khk_hs",
+    "B_Static_Designator_01_weapon_F"
 ] + GENERAL_GLOBAL + Bis_Silencers + Bis_Weapons_Standard;
 
 /////////////////////////////////////////////////////////////////
 JTACItems = JTACItems+
 [
     "Laserdesignator",
+    "B_Static_Designator_01_weapon_F",
+    "B_UavTerminal",
     "H_Booniehat_khk_hs"
 ] + GENERAL_GLOBAL + Bis_Silencers + Bis_Weapons_Standard;
 
 /////////////////////////////////////////////////////////////////
 RconMedic = RconMedic+
 [
-    "H_Booniehat_khk_hs"
+    "H_Booniehat_khk_hs",
+    "B_Static_Designator_01_weapon_F"
 ] + GENERAL_GLOBAL + Bis_Silencers + Bis_Weapons_Standard;
 
 /////////////////////////////////////////////////////////////////
@@ -410,6 +418,7 @@ UAVItems = UAVItems+
 [
     "H_Booniehat_khk_hs",
     "B_UAV_01_backpack_F",
+    "B_Static_Designator_01_weapon_F",
     "B_UavTerminal"
 ] + GENERAL_GLOBAL + Bis_Silencers  + Bis_Weapons_Standard;
 
@@ -417,6 +426,7 @@ UAVItems = UAVItems+
 RconExp = RconExp+
 [
     "H_Booniehat_khk_hs",
+    "B_Static_Designator_01_weapon_F",
     "V_PlateCarrierGL_rgr",
     //"V_PlateCarrierGL_tna_F",
     "ToolKit"
@@ -432,5 +442,6 @@ Repair = Repair+
 RconTeamLead = RconTeamLead+
 [	
     "Laserdesignator",
+    "B_Static_Designator_01_weapon_F",
     "H_Booniehat_khk_hs"
 ] + GENERAL_GLOBAL + Bis_Silencers + Bis_Weapons_Standard + Bis_Weapons_GLs;
