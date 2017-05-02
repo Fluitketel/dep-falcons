@@ -217,9 +217,7 @@ Bis_Silencers =
     "muzzle_snds_L",
     "muzzle_snds_M",
     "muzzle_snds_H_SW",
-    "muzzle_snds_B",
-    "muzzle_mzls_L",
-    "muzzle_mzls_H"
+    "muzzle_snds_B"
 ];
  
 Bis_Uniforms = 

@@ -84,6 +84,8 @@ ACE_Hats_Glasses_Masks = [];
 
 ACE_Items_Generic = 
 [
+    "ACE_muzzle_mzls_H",
+    "ACE_muzzle_mzls_L",
     "ACE_Vector",
     "ACE_IR_Strobe_Item",
     "ACE_EarPlugs",

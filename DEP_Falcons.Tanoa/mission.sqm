@@ -22382,6 +22382,7 @@ class Mission
 			};
 			id=765;
 			type="Land_FieldToilet_F";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item759
 		{
