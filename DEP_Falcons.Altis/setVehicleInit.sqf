@@ -28,23 +28,23 @@ _utility = [
     "B_Truck_01_Repair_F"
 ];
 if (typeOf _vehicle in _transports || _vehicle isKindOf "Ship") then {
-    _delay = 900; // 15 minutes
+    _delay = 600; // 10 minutes
     _deserted = 21600; // 6 hours
 };
 if (typeOf _vehicle in _utility) then {
-    _delay = 900; // 15 minutes
+    _delay = 600; // 10 minutes
     _deserted = 0;
 };
 if (typeOf _vehicle in _armored || _vehicle isKindOf "Tank") then {
-    _delay = 3600; // 1 hour
+    _delay = 600; // 10 minutes
     _deserted = 0;
 };
 if (_vehicle isKindOf "Plane") then {
-    _delay = 1;// 3600; // 1 hour
+    _delay = 600; // 10 minutes
     _deserted = 0;
 };
 if (_vehicle isKindOf "Helicopter") then {
-    _delay = 1800; // 30 minutes
+    _delay = 600; // 10 minutes
     _deserted = 0;
 };
 _nil = [_vehicle, _delay, _deserted, 0, false, false, "setVehicleCargo.sqf"] execVM "setVehicleRespawn.sqf";
