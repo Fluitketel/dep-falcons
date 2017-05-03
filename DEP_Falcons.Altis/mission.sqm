@@ -3273,8 +3273,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						rank="CORPORAL";
-						description="Marksman";
+						description="Repair Specialist";
 						isPlayable=1;
 					};
 					id=437;
