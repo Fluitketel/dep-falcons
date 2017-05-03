@@ -29,7 +29,7 @@ _utility = [
 ];
 if (typeOf _vehicle in _transports || _vehicle isKindOf "Ship") then {
     _delay = 900; // 15 minutes
-    _deserted = 7200; // 2 hours
+    _deserted = 21600; // 6 hours
 };
 if (typeOf _vehicle in _utility) then {
     _delay = 900; // 15 minutes
