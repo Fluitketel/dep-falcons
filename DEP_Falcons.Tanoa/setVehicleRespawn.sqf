@@ -89,7 +89,7 @@ while {_run} do {
 	if (_deserted > 0) then {
         _nearPlayers = false;
         {
-          if ((_x distance _unit) < 100) exitWith { _nearPlayers = true; };
+          if ((_x distance _unit) < 500) exitWith { _nearPlayers = true; };
         } forEach playableUnits;
 		if ((getPosASL _unit distance _position > 10) and ({alive _x} count crew _unit == 0) and (getDammage _unit < 0.8) and !_nearPlayers) then {
 			_timeout = time + _deserted;
