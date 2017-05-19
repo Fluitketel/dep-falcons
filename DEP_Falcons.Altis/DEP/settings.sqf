@@ -106,7 +106,9 @@ dep_safe_zone = [
     getMarkerPos "safezone1", 
     getMarkerPos "safezone2",
     getMarkerPos "safezone3",
-    getMarkerPos "safezone4"
+    getMarkerPos "safezone4",
+    getMarkerPos "safezone5",
+    getMarkerPos "safezone6"
 ];
 
 dep_u_aa = "I_soldier_F";

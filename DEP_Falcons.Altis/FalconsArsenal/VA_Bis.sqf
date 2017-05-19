@@ -346,8 +346,10 @@ EODItems = EODItems+
 PilotItems = PilotItems+
 [
     "U_B_HeliPilotCoveralls",
-    "H_HelmetCrew_B",
-    "H_PilotHelmetHeli_B"
+    "H_CrewHelmetHeli_B",
+    "H_PilotHelmetHeli_B",
+    "H_PilotHelmetFighter_B",
+    "U_B_PilotCoveralls"
 ] + GENERAL_GLOBAL;
 /////////////////////////////////////////////////////////////////
 RTOItems = RTOItems+

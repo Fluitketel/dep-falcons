@@ -3,6 +3,11 @@ m_isserver = if (isDedicated || m_ishostedserver) then {true} else {false};
 m_isclient = if ((m_ishostedserver || !isDedicated) && (hasInterface)) then {true} else {false};
 m_isheadless = if !(hasInterface || isDedicated) then {true} else {false};
 
+if (m_isclient) then {
+    cutText ["", "BLACK FADED", 999];
+    0 fadeSound 0;
+};
+
 m_ace       = isClass(configFile >> "cfgPatches" >> "ace_main");
 m_acre      = isClass(configFile >> "cfgPatches" >> "acre_main");
 m_taskforce = isClass(configFile >> "cfgPatches" >> "task_force_radio");
@@ -49,7 +54,7 @@ if (isNil "PARAMS_base_location") then {
 [] execVM "DEP\init.sqf";
 
 if (m_isserver) then {
-    m_bases = ["Salt Flats","Ekali"];
+    m_bases = ["Salt Flats","Ekali","Sungard","Wolfskull"];
     if (PARAMS_base_location >= 0) then {
         m_base_location = m_bases select PARAMS_base_location;
     } else {
@@ -63,6 +68,14 @@ if (m_isclient) then {
     if (!isMultiplayer) then {
         waitUntil {count ([player] call BIS_fnc_getRespawnPositions) > 0};
         _spawnpositions = [player] call BIS_fnc_getRespawnPositions;
-        player setPos (getPos (_spawnpositions select 0));
+        player setPosATL (getPosATL (_spawnpositions select 0));
+        sleep 1;
     };
+    "dynamicBlur" ppEffectEnable true;   
+    "dynamicBlur" ppEffectAdjust [5];   
+    "dynamicBlur" ppEffectCommit 0;     
+    "dynamicBlur" ppEffectAdjust [0.0];  
+    "dynamicBlur" ppEffectCommit 3;
+    5 fadeSound 1;
+    cutText ["", "BLACK IN", 5];
 };

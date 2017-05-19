@@ -15,5 +15,6 @@ player removeItem "ItemRadio";
 
 removeUniform player;
 _uniform = "U_B_CTRG_1";
-if ((typeOf player) in ["B_Helipilot_F"]) then { _uniform = "U_B_HeliPilotCoveralls" };
+if ((typeOf player) in ["B_Helipilot_F", "B_helicrew_F"]) then { _uniform = "U_B_HeliPilotCoveralls" };
+if ((typeOf player) in ["B_Pilot_F"]) then { _uniform = "U_B_PilotCoveralls" };
 player addUniform _uniform;
