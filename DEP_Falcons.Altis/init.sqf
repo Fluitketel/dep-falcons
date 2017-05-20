@@ -54,7 +54,7 @@ if (isNil "PARAMS_base_location") then {
 [] execVM "DEP\init.sqf";
 
 if (m_isserver) then {
-    m_bases = ["Salt Flats","Ekali","Sungard","Wolfskull"];
+    m_bases = ["Carrier","Salt Flats","Ekali","Sungard","Wolfskull"];
     if (PARAMS_base_location >= 0) then {
         m_base_location = m_bases select PARAMS_base_location;
     } else {

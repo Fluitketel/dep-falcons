@@ -37,6 +37,8 @@ dep_air_patrols = PARAMS_DEP_AIR;
 dep_mortars     = round random 2;
 dep_aa_camps    = 5;
 dep_side        = independent;
+dep_act_height  = 400;
+dep_act_speed   = 400;
 
 // Hard difficulty
 if (PARAMS_Difficulty == 1) then {
@@ -95,6 +97,7 @@ dep_air_vehicles = [
     "I_Heli_Transport_02_F",
     "I_Plane_Fighter_03_CAS_F",
     "I_Plane_Fighter_03_AA_F",
+    "I_Plane_Fighter_04_F",
     "I_Heli_light_03_F",
     "I_Heli_light_03_unarmed_F",
     "I_Heli_light_03_unarmed_F",

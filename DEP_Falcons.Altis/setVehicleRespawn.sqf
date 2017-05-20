@@ -49,7 +49,7 @@ Contact & Bugreport: cwadensten@gmail.com
 ================================================================================================================== */
 
 
-private ["_hasname","_delay","_deserted","_respawns","_noend","_dead","_nodelay","_timeout","_position","_dir","_effect","_rounds","_run","_unit","_explode","_dynamic","_unitinit","_haveinit","_unitname","_type"];
+private ["_hasname","_delay","_deserted","_respawns","_noend","_dead","_nodelay","_timeout","_position","_dir","_effect","_rounds","_run","_unit","_explode","_dynamic","_unitinit","_haveinit","_unitname","_type","_pylons"];
 if (!isServer) exitWith {};
 // Define variables
 _unit = _this select 0;
@@ -79,6 +79,7 @@ _position = getPosASL _unit;
 _type = typeOf _unit;
 _dead = false;
 _nodelay = false;
+_pylons = getPylonMagazines _unit;
 
 // Start monitoring the vehicle
 while {_run} do {
@@ -120,6 +121,13 @@ while {_run} do {
 			_unit  setVehicleVarName (format ["%1",_unitname]);
 			PublicVariable (format ["%1",_unitname]);
 		};
+        
+        // Apply dynamic loadouts
+        private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _unit >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+        private _nonPylonWeapons = [];
+        { _nonPylonWeapons append getArray (_x >> "weapons") } forEach ([_unit, configNull] call BIS_fnc_getTurrets);
+        { _unit removeWeaponGlobal _x } forEach ((weapons _unit) - _nonPylonWeapons);
+        { _unit setPylonLoadOut [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
 
 		//processInitCommands;
 		//_unit execVM "setVehicleCargo.sqf";

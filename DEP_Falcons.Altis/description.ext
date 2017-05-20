@@ -10,8 +10,8 @@ class Params
     class base_location
 	{
 		title = "Starting base";
-		values[] = {-1,0,1,2,3};
-		texts[] = {"Random","Salt Flats (NE)","Ekali (SE)","Sungard (SW)","Wolfskull (NW)"};
+		values[] = {-1,0,1,2,3,4};
+		texts[] = {"Random","USS Freedom","Salt Flats (NE)","Ekali (SE)","Sungard (SW)","Wolfskull (NW)"};
 		default = -1;
 	};
     class Difficulty
