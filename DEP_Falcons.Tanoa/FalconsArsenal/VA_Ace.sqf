@@ -118,12 +118,12 @@ if (!isNil "ace_medical_level") then {
         [
             "ACE_personalAidKit",
             "ACE_tourniquet",
-            "ACE_plasmaIV",
-            "ACE_plasmaIV_500",
-            "ACE_plasmaIV_250",
             "ACE_salineIV",
             "ACE_salineIV_500",
-            "ACE_salineIV_250"
+            "ACE_salineIV_250",
+			"ACE_quikclot",
+			"ACE_packingBandage",
+			"ACE_surgicalKit"
         ];
     };
 };
